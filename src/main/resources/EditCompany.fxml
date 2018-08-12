@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="260.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="EditCompanyController">
+   <children>
+      <AnchorPane prefHeight="262.0" prefWidth="600.0">
+         <children>
+            <Label layoutX="14.0" layoutY="22.0" text="Предприятие" />
+            <ComboBox fx:id="company" layoutX="127.0" layoutY="18.0" onAction="#setCompany" prefHeight="25.0" prefWidth="253.0" />
+            <Label layoutX="14.0" layoutY="80.0" text="Название" />
+            <Label layoutX="14.0" layoutY="137.0" text="Описание" />
+            <TextField fx:id="companyName" layoutX="127.0" layoutY="76.0" prefHeight="25.0" prefWidth="403.0" promptText="Название предприятия. Например: ЧН Чигрин" />
+            <TextField fx:id="companyDesc" layoutX="127.0" layoutY="133.0" prefHeight="25.0" prefWidth="403.0" promptText="Краткое описание предприятия" />
+            <Button fx:id="btnAdd" layoutX="127.0" layoutY="199.0" mnemonicParsing="false" onAction="#btnAddPressed" text="Добавить" />
+            <Button fx:id="btnDelete" layoutX="367.0" layoutY="199.0" mnemonicParsing="false" onAction="#btnDeletePressed" text="Удалить" />
+            <Button fx:id="btnCompanyCancel" layoutX="472.0" layoutY="199.0" mnemonicParsing="false" onAction="#closeCompanyDialog" text="Отмена" />
+            <Button fx:id="btnSave" layoutX="244.0" layoutY="199.0" mnemonicParsing="false" onAction="#btnSavePress" text="Сохранить" />
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

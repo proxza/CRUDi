@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="445.0" minWidth="600.0" prefHeight="494.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AddController">
+   <children>
+      <AnchorPane prefHeight="496.0" prefWidth="600.0">
+         <children>
+            <Label layoutX="14.0" layoutY="25.0" text="№" />
+            <Label layoutX="14.0" layoutY="79.0" text="Название" />
+            <Label layoutX="14.0" layoutY="186.0" text="Цена" />
+            <Label layoutX="14.0" layoutY="132.0" text="Описание" />
+            <Label layoutX="14.0" layoutY="238.0" text="Дата покупки" />
+            <Label layoutX="15.0" layoutY="292.0" text="Дата списания" />
+            <Label layoutX="14.0" layoutY="344.0" text="Местоположение" />
+            <TextField fx:id="editNumber" layoutX="120.0" layoutY="21.0" prefHeight="25.0" prefWidth="458.0" promptText="Введите инвентаризационный номер предмета" />
+            <TextField fx:id="editName" layoutX="120.0" layoutY="75.0" prefHeight="25.0" prefWidth="458.0" promptText="Введите название предмета" />
+            <TextField fx:id="editDesc" layoutX="120.0" layoutY="128.0" prefHeight="25.0" prefWidth="458.0" promptText="Введите описание предмета" />
+            <TextField fx:id="editPrice" layoutX="120.0" layoutY="182.0" prefHeight="25.0" prefWidth="458.0" promptText="Введите цену предмета (только цифры!). Цена должна быть в гривне" />
+            <TextField fx:id="editBuy" layoutX="120.0" layoutY="234.0" prefHeight="25.0" prefWidth="458.0" promptText="Введите дату покупки" />
+            <TextField fx:id="editCrash" layoutX="120.0" layoutY="288.0" prefHeight="25.0" prefWidth="458.0" promptText="Если предмет списан - введите дату списания" />
+            <TextField fx:id="editPlace" layoutX="120.0" layoutY="340.0" prefHeight="25.0" prefWidth="458.0" promptText="Введите фактическое местоположение (адрес) предмета" />
+            <Button fx:id="btnAddItem" layoutX="219.0" layoutY="447.0" mnemonicParsing="false" onAction="#addItemBtnPress" text="Добавить" />
+            <Button fx:id="btnCloseAddItem" layoutX="308.0" layoutY="447.0" mnemonicParsing="false" onAction="#closeAddItemDialog" text="Отмена" />
+            <Label layoutX="15.0" layoutY="390.0" text="Предприятие" />
+            <ComboBox fx:id="editCompany" layoutX="120.0" layoutY="386.0" prefHeight="25.0" prefWidth="249.0" />
+         </children>
+         <opaqueInsets>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </opaqueInsets>
+      </AnchorPane>
+   </children>
+</VBox>
